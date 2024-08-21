@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Assistant Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Programming Assistant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Your Programming Assistant</h2>
+                <p>Your intelligent companion for all programming tasks, from documentation to performance analysis.</p>
+            </div>
+        </section>
+
+        <section id="features" class="about">
+            <div class="container">
+                <h2>Features</h2>
+                <p>Our assistant offers a variety of features to streamline your development process:</p>
+                <ul>
+                    <li>Access to the latest documentation</li>
+                    <li>Code snippet suggestions and best practices</li>
+                    <li>Debugging and error fixing</li>
+                    <li>Code optimization for better performance</li>
+                    <li>Performance analysis and improvement suggestions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h3>Documentation Support</h3>
+                        <p>Identify programming languages and provide up-to-date, easy-to-understand documentation.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Code Suggestions</h3>
+                        <p>Provide sample code snippets tailored to your needs, adhering to best practices.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Error Fixing</h3>
+                        <p>Analyze and fix code errors, while explaining the causes of those errors.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Code Optimization</h3>
+                        <p>Suggest optimizations to enhance performance and maintainability.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Performance Analysis</h3>
+                        <p>Evaluate code performance and provide suggestions for improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Programming Assistant Bot | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Coze WebChatClient Integration -->
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+            config: {
+                bot_id: '7392505776956653575',
+            },
+            componentProps: {
+                title: 'Programming Assistant Bot',
+            },
+        });
+    </script>
+</body>
+
+</html>
